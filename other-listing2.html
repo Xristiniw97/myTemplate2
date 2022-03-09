@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtherListing2 - Revit up Template</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- PREFETCH  -->
+    <link href="https://cdn.jsdelivr.net" rel="dns-prefetch" crossorigin="anonymous">
+    <link href="https://code.jquery.com" rel="dns-prefetch" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch" crossorigin="anonymous">
+    <!-- PREFETCH  -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONTS -->
+
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
+
+    <!-- OWL CAROUSEL  -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWL CAROUSEL  -->
+
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FANCYBOX  -->
+
+    <!-- AOS LIBRARY -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS LIBRARY -->
+
+    <!-- MY STYLE -->
+    <link rel="preload" as="style" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- MY STYLE -->
+
+    <!-- SCRIPTS PRELOAD  -->
+    <!-- JQUERY  -->
+    <link rel="preload" as="script" href="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+    <!-- OWL CAROUSEL  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- GSAP -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- AOS LIBRARY  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- MY SCRIPT  -->
+    <link rel="preload" as="script" href="./scripts/scripts.js">
+    <!-- SCRIPTS PRELOAD  -->
+
+</head>
+<body>
+
+
+    <!-- START OF HEADER  -->
+    <header class="fixed-top">
+        <div class="col-11 col-xxl-10 m-auto">
+            <div class="row g-0 align-items-center justify-content-between position-relative">
+                <div class="col-5 col-lg-2">
+                    <a href="index.html" class="header-logo">
+                        <img src="./images/revitup-logo.jpg" alt="Revit Up Logo">
+                        <img src="./images/logo-revitup2.jpg" alt="Revit Up Logo" class="d-none">
+                    </a>
+                </div>
+                <div class="col-1 col-lg-7 d-flex align-content-center justify-content-end justify-content-xl-center">
+                    <div class="hamburger toggler me-0 me-lg-3 me-xl-5" id="nav-open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="main-navigation list-unstyled d-none d-lg-inline-flex">
+                        <li><a href="#">HOTEL</a></li>
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">OFFERS</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 text-end">
+                    <a href="#" class="mainBtn">BOOK YOUR STAY</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+
+    <!-- Διαφορετικό Μενού  -->
+    <!-- START OF TOGGLER NAV  -->
+    <div class="toggler-nav">
+        <nav class="nav">
+            <div class="close">
+                <div></div>
+            </div>
+            <div class="row align-items-center justify-content-center wrap text-center text-md-start">
+                <div class="menu col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <div class="col-10 col-lg-8 m-auto">
+                        <ul class="list-unstyled">
+                            <li><a href="#">HOTEL</a></li>
+                            <li><a href="#">ROOMS</a></li>
+                            <li><a href="#">DINING</a></li>
+                            <li><a href="#">EXPERIENCES</a></li>
+                            <li><a href="#">LOCATION</a></li>
+                            <li><a href="#">OFFERS</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">COVID-19</a></li>
+                        </ul>
+                        <div class="d-flex flex-column align-items-center align-items-md-start contact-details mt-3 mt-lg-5">
+                            <a href="tel:+306946492914" title="Call Us">+30 6946492914</a>
+                            <p>Κωνσταντινουπόλεως 12, Ηράκλειο 713 04</p> 
+                            <a href="#" class="mainBtn mt-3">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form col-0 col-md-6 d-flex align-items-center">
+                    <div class="col-10 col-lg-8 m-auto">
+                        <h1>BOOK NOW</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, impedit.</p>
+                        <form class="row mt-5">
+                            <div class="col-6 position-relative mb-5">
+                                <label for="check-in" class="visually-hidden">check-in</label>
+                                <img src="./images/datepicker.svg" alt="check-in">
+                                <input type="text" class="form-control" id="check-in">
+                            </div>
+                            <div class="col-6 position-relative mb-5">
+                                <label for="check-out" class="visually-hidden">check-out</label>
+                                <img src="./images/datepicker.svg" alt="check-out">
+                                <input type="text" class="form-control" id="check-out">
+                            </div>
+                            <div class="col-6 position-relative">
+                                <label for="adults" class="visually-hidden">adults</label>
+                                <img src="./images/people.svg" alt="adults">
+                                <select class="form-select form-control" aria-label="adults" id="adults">
+                                    <option value="1">1 Adult</option>
+                                    <option value="2" selected>2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                </select>
+                            </div>
+                            <div class="col-6 position-relative">
+                                <label for="children" class="visually-hidden">children</label>
+                                <img src="./images/people.svg" alt="children">
+                                <select class="form-select form-control" aria-label="children" id="children">
+                                    <option value="0" selected>0 Children</option>
+                                    <option value="1">1 Children</option>
+                                    <option value="2">2 Children</option>
+                                    <option value="3">3 Children</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="mainBtn mt-5">CHECK AVAILABILITY</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END OF TOGGLER NAV  -->
+
+    <!-- START OF LISTING SECTION  -->
+    <div class="marginTop listing">
+        <div class="col-10 col-xl-8 m-auto pt-5">
+            <div class="text-center">
+                <h1 class="text-center">
+                    LOCATION
+                </h1>
+                <h2 class="text-center">
+                    EXPLORE THE MAGIC 
+                </h2>
+                <p class="mt-5 px-md-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, doloribus aliquid rerum, natus, unde rem ipsum alias veritatis praesentium soluta vel provident. Odit ad labore voluptate doloribus aspernatur. Praesentium, distinctio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, doloribus aliquid rerum, natus, unde rem ipsum alias veritatis praesentium soluta vel provident. Odit ad labore voluptate doloribus aspernatur. Praesentium, distinctio?</p>
+            </div>
+           <div class="marginTop">
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                           
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 1</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                            
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 2</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                            
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 3</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                           
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 4</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                            
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 5</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="#">
+                        <div class="box-content" style="background: url('images/for-desktop/image-14.jpg') no-repeat center center/ cover;">
+                            
+                        </div>
+                    </a>
+                    <div class="box-content-text pt-3 px-3">
+                        <div class="heading">LOCATION 6</div>
+                        <div class="miniDesc my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora provident autem, facere saepe eveniet non ipsa corrupti. Laborum, rem expedita.</div>
+                        <a href="#" class="mainBtn">EXPLORE MORE</a>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+           
+
+        </div>
+    </div>
+    <!-- END OF LISTING SECTION  -->
+
+    <!-- START OF REVIEWS -->
+    <div class="marginTop">
+        <div class="col-10 col-lg-8 col-xxl-6 m-auto text-center">
+            <div class="h1">REVIEWSBOOK</div>
+            <h2>
+                WHAT THEY SAY ABOUT US
+            </h2>
+            <div id="reviewsCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-aos="fade-up" data-aos-easing="linear">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> 
+                        <div class="review-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                            </p>
+                            <div class="review-name">
+                                Christina Nikiforoy
+                            </div>
+                            <div class="review-source">
+                                Tripadvisor
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item"> 
+                        <div class="review-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                            </p>
+                            <div class="review-name">
+                                Christina Nikiforoy
+                            </div>
+                            <div class="review-source">
+                                Tripadvisor
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item"> 
+                        <div class="review-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                            </p>
+                            <div class="review-name">
+                                Christina Nikiforoy
+                            </div>
+                            <div class="review-source">
+                                Tripadvisor
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item"> 
+                        <div class="review-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                            </p>
+                            <div class="review-name">
+                                Christina Nikiforoy
+                            </div>
+                            <div class="review-source">
+                                Tripadvisor
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="carousel-item"> 
+                        <div class="review-box">
+                            <p class="review-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos tempora voluptates ea asperiores numquam repellendus esse praesentium tenetur? Magnam corporis itaque ducimus quidem, ea officiis maxime. Iure, et inventore?
+                            </p>
+                            <div class="review-name">
+                                Christina Nikiforoy
+                            </div>
+                            <div class="review-source">
+                                Tripadvisor
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF REVIEWS-->
+
+    <!-- START OF CONTACT -->
+    <div class="marginTop">
+        <div class="col-12 col-md-10 m-auto pt-5">
+            <div class="row contact-row g-0">
+                <div class="col-lg-6 position-relative order-2 order-lg-1">
+                    <div class="map-container" style="background: url('./images/map.jpg') no-repeat center center/cover;">
+                        <div class="map-box shadow-sm">
+                            <div class="company">
+                                <div class="name-company">RevitUp.direct</div>
+                                <div class="company-address">Κωνσταντινουπόλεως 12, Ηράκλειο 713 04</div>
+                            </div>
+                            <div class="directions">
+                                <img src="./images/map-pin.png" alt="">
+                                <span>Directions</span>
+                            </div>
+                        </div>
+                    </div>  
+                    <picture class="d-none d-lg-block">
+                        <source srcset="./images/for-desktop/image-1.jpg" type="image/jpeg">
+                        <img src="./images/for-desktop/image-1.webp" alt="image 1" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col-lg-6 pb-5 py-lg-5 px-4 px-lg-0 ps-lg-5 order-1 order-lg-2">
+                    <div class="col-12 col-xxl-8">
+                        <h2 class="h1">
+                        hi, we are revitUp<br>
+                        we offer hotel<br>
+                        Revenue Management<br>
+                        & Digital Marketing
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vero quos laudantium numquam labore, eveniet cupiditate expedita dignissimos! Fugit, assumenda.</p>
+                    </div>
+                    <div class="contact-box p-4 text-center" data-aos="fade-in" data-aos-easing="linear">
+                        <h2>GET IN TOUCH</h2>
+                        <div class="d-flex justify-content-center mt-5">
+                            <a href="#">
+                                <div class="call d-flex align-items-center">
+                                    <span>CALL NOW</span>
+                                    <img src="./images/phone.png" alt="">
+                                </div>
+                            </a>
+                           <a href="#">
+                                <div class="contact-form d-flex align-items-center">
+                                    <span>ENQUIRE NOW</span>
+                                    <img src="./images/right-arrow.png" alt="">
+                                </div>
+                           </a>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- END OF CONTACT -->
+
+    <!-- START BLUE BACKGROUND  -->
+    <div class="bluebg bluebg-footer pb-5">
+        <!-- START OF INSTA FEED  -->
+        <div class="insta-feed">
+            <div class="col-12 col-lg-10 m-auto position-relative px-2 px-md-0">
+                <div class="row g-0">
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-1.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-1.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-2.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-2.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-3.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-3.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-4.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-4.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-5.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-5.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-6.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-6.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-7.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-7.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex justify-content-center px-2">
+                        <figure class="effect-layla" data-aos="fade-in" data-aos-easing="linear">
+                            <picture>
+                                <source srcset="./images/for-desktop/image-8.jpg" type="image/jpeg">
+                                <img src="./images/for-desktop/image-8.webp" alt="image 1" class="img-fluid">
+                            </picture>
+                            <figcaption>
+                                <a href="#">View photo</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+                <a href="#" class="insta-link">
+                    <div class="insta-btn">
+                        <img src="./images/instagram.svg" alt="insta">  
+                    </div>
+                    instagram
+                </a>
+            </div>
+        </div>
+        <!-- END OF INSTA FEED  -->
+
+        <!-- START OF NEWSLETTER  -->
+        <div class="mt-0 mt-lg-5">
+            <div class="col-11 col-lg-8 col-xxl-6 m-auto text-center">
+                <div class="h1">Subscribe tou our newsletter</div>
+                <h2>Dont't miss a thing</h2>
+                <form class="row g-0 justify-content-center newsletter-form mt-5">
+                    <div class="col-12 col-sm-4 mb-3 mb-md-0">
+                        <label for="name" class="visually-hidden">First name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First name">
+                    </div>
+                    <div class="col-12 col-sm-8">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                    </div>
+                    <div class="col-auto button">
+                    <button type="submit" class="mainBtn2">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END OF NEWSLETTER  -->
+
+        <!-- START OF FOOTER  -->
+        <footer class="marginTop">
+            <div class="col-10 m-auto">
+                <div class="d-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <div class="footer-social d-flex align-self-end">
+                        <span>Find Us On</span>
+                        <ul class="list-unstyled d-inline-flex ms-3">
+                            <li><a href="#"><img src="./images/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/instagram.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-details d-flex flex-column text-lg-end mt-5 mt-lg-0">
+                        <ul class="list-unstyled mb-3">
+                            <li><a href="tel:+306946492914"><img src="./images/phone.png" alt=""> +30 6946492914</a></li>
+                            <li><a href="mailto:hello@revitup.direct"><img src="./images/mail-icon.png" alt="">hello@revitup.direct</a></li>
+                            <li><a href="https://goo.gl/maps/3fZBbuxnmN8epzi19" target="_blank"><img src="./images/map-pin.png" alt="">Κωνσταντινουπόλεως 12, Ηράκλειο 713 04</a></li>
+                        </ul>
+                        <div class="copyright">
+                            @2022 Revitup.<br> All rights reserved | Designed and developed by <a href="https://www.eyewide.gr/">Eyewide - Hotel Internet Marketing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END OF FOOTER  -->
+    </div>
+    <!-- END BLUE BACKGROUND  -->
+
+    
+    <!-- CDN SCRIPTS -->
+    <!-- JQUERY CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- OWL CAROUSEL CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FANCYBOX  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Το script αυτό χρησιμοποείται για το menu GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS LIBRARY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CDN SCRIPTS -->
+
+    <!-- MY SCRIPTS  -->
+    <script src="./scripts/scripts.js"></script>
+    <!-- MY SCRIPTS  -->
+    
+</body>
+</html>
