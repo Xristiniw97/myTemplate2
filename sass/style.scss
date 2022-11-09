@@ -380,7 +380,7 @@ nav {
 .contact-details,.booking-form {
     font-weight: 400;
     color: var(--myblack);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .booking-form { 
@@ -390,7 +390,6 @@ nav {
 .contact-details a {
     font-family: var(--fontRoboto);
     color: var(--myblack);
-    font-size: 25px;
 }
 
 .nav .mainBtn2 {
@@ -909,7 +908,11 @@ nav .close:hover div::after {
 }
 
 #reviewsCarousel .carousel-indicators {
-    bottom: -65px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: unset;
+    margin: 0;
 }
 
 @media screen and (max-width: 1199px) {
