@@ -1,8 +1,7 @@
 /** START OF GENERIC RULES **/
-html,
-body,
-ul,
-ol {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +15,8 @@ button {
   cursor: pointer;
 }
 
-button:focus, a:focus {
+button:focus,
+a:focus {
   box-shadow: none !important;
   outline: none;
 }
@@ -63,7 +63,7 @@ a:hover {
 }
 
 /* For fix images  */
-@media  {
+@media {
   img {
     image-rendering: -webkit-optimize-contrast !important;
   }
@@ -87,37 +87,50 @@ body {
   color: var(--myblack);
 }
 
-h1, .h1, h2, .h2 {
+h1,
+.h1,
+h2,
+.h2 {
   font-family: var(--fontJosefin);
   text-transform: uppercase;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 35px;
   color: var(--mybluedark);
   letter-spacing: 1px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 25px;
   color: var(--mypurple);
   letter-spacing: 0.8px;
 }
 
 @media screen and (max-width: 991px) {
-  h1, .h1 {
+
+  h1,
+  .h1 {
     font-size: 30px;
   }
-  h2, .h2 {
+
+  h2,
+  .h2 {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h1, .h1 {
+
+  h1,
+  .h1 {
     font-size: 26px;
   }
-  h2, .h2 {
+
+  h2,
+  .h2 {
     font-size: 19px;
   }
 }
@@ -133,7 +146,8 @@ h2, .h2 {
 }
 
 /** START OF MAIN BUTTON **/
-.mainBtn, .mainBtn2 {
+.mainBtn,
+.mainBtn2 {
   font-family: var(--fontRoboto);
   font-size: 16px;
   font-weight: 400;
@@ -254,6 +268,7 @@ header .mainBtn {
     padding: 12px 8px;
     font-size: 14px;
   }
+
   .main-navigation li a {
     padding: 0px 10px;
     font-size: 14px;
@@ -264,12 +279,14 @@ header .mainBtn {
   .header-logo img:first-child {
     width: 150px;
   }
+
   header.active .header-logo img:last-child,
   .header-logo img:last-child {
     width: 40px;
   }
+
   .hamburger {
-    left: calc( 100% - 200px);
+    left: calc(100% - 200px);
     position: absolute;
     top: 8px;
   }
@@ -279,14 +296,17 @@ header .mainBtn {
   .header-logo img:first-child {
     display: none;
   }
+
   .header-logo img:last-child {
     display: block !important;
   }
+
   header .mainBtn {
     padding: 12px 5px;
   }
+
   .hamburger {
-    left: calc( 100% - 190px);
+    left: calc(100% - 190px);
   }
 }
 
@@ -362,7 +382,8 @@ nav {
   font-weight: 600;
 }
 
-.contact-details, .booking-form {
+.contact-details,
+.booking-form {
   font-weight: 400;
   color: var(--myblack);
   font-size: 16px;
@@ -439,6 +460,7 @@ nav .close:hover div::after {
     font-size: 16px;
     padding: 15px 25px 15px 40px;
   }
+
   .booking-form img {
     width: 20px;
     top: 18px;
@@ -450,6 +472,7 @@ nav .close:hover div::after {
   .nav .menu ul li a {
     font-size: 20px;
   }
+
   .nav .mainBtn2 {
     font-size: 15px;
   }
@@ -459,15 +482,20 @@ nav .close:hover div::after {
   .nav .menu ul li a {
     font-size: 20px;
   }
+
   .nav .mainBtn2 {
     font-size: 15px;
   }
-  .contact-details, .booking-form {
+
+  .contact-details,
+  .booking-form {
     font-size: 16px;
   }
+
   .contact-details a {
     font-size: 20px;
   }
+
   .nav .menu {
     padding: 60px 0px 50px;
   }
@@ -590,7 +618,8 @@ nav .close:hover div::after {
   transition: all 0.4s ease;
 }
 
-.arrow:before, .arrow:after {
+.arrow:before,
+.arrow:after {
   transition: all 0.4s ease;
   content: "";
   display: block;
@@ -624,7 +653,9 @@ nav .close:hover div::after {
 }
 
 @media screen and (max-width: 991px) {
-  #genericCarousel::before, #genericCarousel .carousel-item {
+
+  #genericCarousel::before,
+  #genericCarousel .carousel-item {
     height: 550px !important;
   }
 }
@@ -633,22 +664,28 @@ nav .close:hover div::after {
   .carousel-control-prev {
     left: 20px;
   }
+
   .carousel-control-next {
     right: 20px;
   }
+
   .bigCarousel .arrow-container {
     top: 50px;
   }
+
   .bigCarousel .carousel-indicators {
     display: none;
   }
+
   .bigCarousel .carousel-control-next {
     left: 70px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  #genericCarousel::before, #genericCarousel .carousel-item {
+
+  #genericCarousel::before,
+  #genericCarousel .carousel-item {
     height: 400px !important;
   }
 }
@@ -711,9 +748,11 @@ nav .close:hover div::after {
   .booking-row .row .col {
     padding: 20px 20px;
   }
+
   .booking-row .form-control {
     font-size: 16px;
   }
+
   .booking-row .btn {
     height: 109px;
   }
@@ -748,15 +787,19 @@ nav .close:hover div::after {
   .homeWelcome img {
     display: none;
   }
+
   .homeWelcome {
     text-align: center;
   }
+
   .homeWelcome .row {
     margin-top: 30px;
   }
+
   .homeWelcome .bookSpace {
     margin: 50px 0px 0px;
   }
+
   .homeWelcome {
     background-size: contain;
   }
@@ -902,48 +945,62 @@ nav .close:hover div::after {
   .box-text {
     padding: 30px 15px;
   }
+
   .miniCarousel .imageCol {
     height: 600px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .miniCarousel .imageCol, .miniCarousel .imageCol::before {
+
+  .miniCarousel .imageCol,
+  .miniCarousel .imageCol::before {
     height: 400px;
   }
+
   .text-content-carousel {
     left: unset;
     top: -80px;
   }
+
   .revert .text-content-carousel {
     right: unset;
   }
+
   .box-text {
     padding: 35px 15px 20px;
   }
+
   .miniCarousel .carousel-indicators {
     display: none;
   }
-  .miniCarousel .carousel-indicators, .revert.miniCarousel .carousel-indicators {
+
+  .miniCarousel .carousel-indicators,
+  .revert.miniCarousel .carousel-indicators {
     margin-right: 10%;
   }
+
   .revert.miniCarousel .carousel-indicators {
     right: 0;
     margin-left: unset;
   }
+
   .miniCarousel .imageCol::before {
     width: 100%;
   }
+
   .carousel-inner-box {
     height: 400px;
   }
 }
 
 @media screen and (max-width: 767px) {
+
   .bigCarousel .carousel-item,
   .bigCarousel.carousel::before {
     height: 500px;
   }
+
   .carousel-inner-box {
     top: unset;
     bottom: 0;
@@ -951,13 +1008,16 @@ nav .close:hover div::after {
     width: 100%;
     font-size: 15px;
   }
+
   .revert .carousel-inner-box {
     left: unset;
   }
+
   .carousel-inner-box .mainBtn2 {
     font-size: 14px;
     padding: 12px 15px;
   }
+
   .carousel-inner-box {
     height: auto;
   }
@@ -1112,12 +1172,15 @@ nav .close:hover div::after {
   .contact-box {
     left: -50px;
   }
+
   .contact-row picture {
     top: -100px;
   }
+
   .contact-box .contact-form {
     margin-left: 30px;
   }
+
   .bluebg-footer {
     margin-top: 80px;
   }
@@ -1127,6 +1190,7 @@ nav .close:hover div::after {
   .contact-row picture {
     top: -15px;
   }
+
   .bluebg-footer {
     margin-top: 120px;
   }
@@ -1136,6 +1200,7 @@ nav .close:hover div::after {
   .contact-box {
     left: auto;
   }
+
   .bluebg-footer {
     margin-top: 140px;
   }
@@ -1146,6 +1211,7 @@ nav .close:hover div::after {
     margin-left: 0px;
     width: 100%;
   }
+
   .map-box .directions {
     margin-left: 10px;
     padding-left: 8px;
@@ -1293,6 +1359,7 @@ figure.effect-layla figcaption a:hover {
   0% {
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
   }
+
   100% {
     box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
@@ -1302,6 +1369,7 @@ figure.effect-layla figcaption a:hover {
   figure.effect-layla {
     height: 250px;
   }
+
   .insta-link {
     width: 90px;
     height: 90px;
@@ -1319,19 +1387,23 @@ figure.effect-layla figcaption a:hover {
     height: 200px;
     border: 5px solid var(--mypurple);
   }
+
   .insta-btn img {
     width: 35px;
   }
+
   .insta-link {
     width: 80px;
     height: 70px;
   }
+
   figure.effect-layla figcaption::before {
     top: 25px;
     right: 30px;
     bottom: 25px;
     left: 30px;
   }
+
   figure.effect-layla figcaption::after {
     right: 15px;
     left: 15px;
@@ -1346,7 +1418,9 @@ figure.effect-layla figcaption a:hover {
   background-size: 300px;
 }
 
-.locationHome, .newsHome, .reviewsHome {
+.locationHome,
+.newsHome,
+.reviewsHome {
   margin-top: 120px;
 }
 
@@ -1355,9 +1429,12 @@ figure.effect-layla figcaption a:hover {
     background: none;
     padding-top: 80px;
   }
-  .locationHome, .newsHome {
+
+  .locationHome,
+  .newsHome {
     margin-top: 0px;
   }
+
   .reviewsHome {
     margin-top: 30px;
   }
@@ -1444,6 +1521,7 @@ footer .footer-social span {
   footer .footer-social {
     padding-right: 125px;
   }
+
   footer .contact-details ul a {
     justify-content: flex-start;
   }
@@ -1471,7 +1549,8 @@ footer .footer-social span {
   position: relative;
 }
 
-.filters ul li:hover, .filters ul li.active {
+.filters ul li:hover,
+.filters ul li.active {
   color: var(--mypurple);
 }
 
@@ -1585,6 +1664,7 @@ footer .footer-social span {
   .listing .imageCol {
     height: 500px;
   }
+
   .reviewsListing {
     margin-top: 0px !important;
   }
@@ -1653,6 +1733,7 @@ footer .footer-social span {
   .room-amenities .col-md-6:first-child ul {
     direction: ltr;
   }
+
   .room-amenities ul {
     padding: 0;
   }
@@ -1721,6 +1802,7 @@ footer .footer-social span {
   .faq {
     margin-bottom: 30px;
   }
+
   .faq .card .card-header .faq-title {
     margin-top: 10px;
     font-size: 18px;
@@ -1730,4 +1812,5 @@ footer .footer-social span {
     padding-bottom: 15px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
